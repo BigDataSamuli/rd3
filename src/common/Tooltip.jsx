@@ -29,18 +29,10 @@ module.exports = React.createClass({
     // TODO: add 'right: 0px' style when tooltip is off the chart
     const tooltipStyles = {
       position: 'absolute',
-      backgroundColor: 'white',
-      border: '1px solid',
-      borderColor: '#ddd',
-      borderRadius: '2px',
-      padding: '10px',
-      marginLeft: '10px',
-      marginRight: '10px',
-      marginTop: '-15px',
     };
     return (
-      <div style={containerStyles}>
-        <div style={tooltipStyles}>
+      <div className="rd3-tooltip-container" style={containerStyles}>
+        <div className="rd3-tooltip-body" style={tooltipStyles}>
           {props.child}
         </div>
       </div>
